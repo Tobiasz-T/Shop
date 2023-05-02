@@ -4,7 +4,7 @@ var sklep=
             <section class="container">\
                         <div class="slider-wrapper">\
                             <div class="slider">\
-                                <img id="slide-1" src="/img/Bee.png"/>\
+                                <img id="slide-1" src="img/Bee.png"/>\
                                 <img id="slide-2" src="img/Bee1.png"/>\
                                 <img id="slide-3" src="img/Bee2.png"/>\
                             </div>\
@@ -34,7 +34,7 @@ var galeria=
             <section class="container">\
                     <div class="slider-wrapper">\
                         <div class="slider">\
-                            <img id="slide-1" src="/img/Bee.png"/>\
+                            <img id="slide-1" src="img/Bee.png"/>\
                             <img id="slide-2" src="img/Bee1.png"/>\
                             <img id="slide-3" src="img/Bee2.png"/>\
                         </div>\
@@ -48,9 +48,9 @@ var galeria=
         </div>\
         <h2>Galeria</h2><br><br><br>\
         <div id="galeria">\
-            <div id="b"><div id="z"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2></div></div>\
-            <div id="b"><div id="z"onclick="Rzepakowy()"><h2>Rzepakowy</h2></div></div>\
-            <div id="b"><div id="z"onclick="Lipowy()"><h2>Lipowy</h2></div></div>\
+            <div id="b"><div id="z"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honeycomb.jpg"/></div></div>\
+            <div id="b"><div id="z"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/apiarists-in-rapeseed-field.jpg"/></div></div>\
+            <div id="b"><div id="z"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/bee-hives-bees-swarming.jpg"/></div></div>\
         </div>\
     </div>';
 function Galeria(){
@@ -64,7 +64,7 @@ var kontakt=
             <section class="container">\
                         <div class="slider-wrapper">\
                             <div class="slider">\
-                                <img id="slide-1" src="/img/Bee.png"/>\
+                                <img id="slide-1" src="img/Bee.png"/>\
                                 <img id="slide-2" src="img/Bee1.png"/>\
                                 <img id="slide-3" src="img/Bee2.png"/>\
                             </div>\
@@ -142,4 +142,3 @@ function Spadziowy(){
         document.getElementById("slide").innerHTML = spadziowy;
     } 
 }
-
