@@ -16,12 +16,13 @@ var sklep=
                         </div>\
             </section>\
         </div>\
-        <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2></div></div>\
+            <div id="napis"><h2>Miody</h2></div>\
+            <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+            <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+            <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+            <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+            <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+            <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
     </div>'
 function Sklep(){
     if (sklep){
@@ -46,11 +47,11 @@ var galeria=
                     </div>\
             </section>\
         </div>\
-        <h2>Galeria</h2><br><br><br>\
+        <h2>Galeria</h2><br>\
         <div id="galeria">\
-            <div id="b"><div id="z"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honeycomb.jpg"/></div></div>\
-            <div id="b"><div id="z"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/apiarists-in-rapeseed-field.jpg"/></div></div>\
-            <div id="b"><div id="z"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/bee-hives-bees-swarming.jpg"/></div></div>\
+            <div id="b"><div id="z"><img src="img/honeycomb.jpg"/></div></div>\
+            <div id="b"><div id="z"><img src="img/apiarists-in-rapeseed-field.jpg"/></div></div>\
+            <div id="b"><div id="z"><img src="img/bee-hives-bees-swarming.jpg"/></div></div>\
         </div>\
     </div>';
 function Galeria(){
@@ -93,14 +94,31 @@ function Kontakt(){
     } 
 }
 var wielokwiatowy=
-    '<div id="box">\
-        <div id="slide">Wielokwiatowy</div>\
-        <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2></div></div>\
-        <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2></div></div>\
-    </div>';
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <div id="b"><div id="p"><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Wielokwiatowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
+</div>';
 function Wielokwiatowy(){
     if (wielokwiatowy){
         document.getElementById("box").innerHTML = wielokwiatowy;
@@ -108,37 +126,186 @@ function Wielokwiatowy(){
 }
 
 var rzepakowy=
-'<div id="rzepak">Rzepak</div>'
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <!--<img src="img\honey-with-rape.jpg">-->\
+            <div id="b"><div id="p"><img src="img/honey-with-rape.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Rzepakowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+</div>';
 function Rzepakowy(){
     if (rzepakowy){
-        document.getElementById("slide").innerHTML = rzepakowy;
+        document.getElementById("box").innerHTML = rzepakowy;
     } 
 }
 
-var lipowy='<div id="rzepak">Lipowy</div>'
+var lipowy=
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <div id="b"><div id="p"><img src="img/honey-linden.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Lipowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+</div>';
 function Lipowy(){
     if (lipowy){
-        document.getElementById("slide").innerHTML = lipowy;
+        document.getElementById("box").innerHTML = lipowy;
     } 
 }
 
-var wrzosowy='<div id="rzepak">Wrzosowy</div>'
+var wrzosowy=
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <div id="b"><div id="p"><img src="img/honey-heather.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Wrzosowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+</div>';
 function Wrzosowy(){
     if (lipowy){
-        document.getElementById("slide").innerHTML = wrzosowy;
+        document.getElementById("box").innerHTML = wrzosowy;
     } 
 }
 
-var nawłociowy='<div id="rzepak">Nawłociowy</div>'
+var nawłociowy=
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <div id="b"><div id="p"><img src="img/honey-goldenrod.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Nawłociowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Spadziowy()"><h2>Spadziowy</h2><img src="img/honey-honeydew.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+</div>';
 function Nawłociowy(){
     if (lipowy){
-        document.getElementById("slide").innerHTML = nawłociowy;
+        document.getElementById("box").innerHTML = nawłociowy;
     } 
 }
 
-var spadziowy='<div id="rzepak">Spadziowy</div>'
+var spadziowy=
+'<div id="box">\
+    <div id="buying">\
+        <div id="buy">\
+            <!--<img src="img\honey-with-rape.jpg">-->\
+            <div id="b"><div id="p"><img src="img/honey-honeydew.jpg"></div></div>\
+        </div>\
+        <div id="zam">\
+            <h2>Spadziowy</h2><br>\
+            \
+            Słoik 720 ml: 35zl<input type="checkbox" id="maly" onclick="buy()"><br>\
+            Słoik 900 ml: 45zł <input type="checkbox" id="duzy"onclick="buy()"><br><br>\
+            Ilość:<input type="number" id="ilosc"onclick="buy()"><br>\
+            Opłata:<br>\
+            Kartą: 0zł<input type="checkbox" id="karta"onclick="buy()"><br>\
+            Pobranie: 20zł<input type="checkbox" id="pobranie"onclick="buy()"><br>\
+            <div id="wynik"></div><br>\
+            <input type="button" value="Zamawiam">\
+        </div>\
+    </div>\
+    <div id="napis"><h2>Miody</h2></div>\
+    <div id="b"><div id="p"onclick="Wielokwiatowy()"><h2>Wielokwiatowy</h2><img src="img/honey-daisy-flower-cornflower1.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Rzepakowy()"><h2>Rzepakowy</h2><img src="img/honey-with-rape.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Lipowy()"><h2>Lipowy</h2><img src="img/honey-linden.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Wrzosowy()"><h2>Wrzosowy</h2><img src="img/honey-heather.jpg"></div></div>\
+    <div id="b"><div id="p"onclick="Nawłociowy()"><h2>Nawłociowy</h2><img src="img/honey-goldenrod.jpg"></div></div>\
+</div>';
 function Spadziowy(){
     if (lipowy){
-        document.getElementById("slide").innerHTML = spadziowy;
+        document.getElementById("box").innerHTML = spadziowy;
     } 
+}
+function buy(){  
+const m=document.getElementById("maly");
+const d=document.getElementById("duzy");
+const k=document.getElementById("karta");
+const p=document.getElementById("pobranie");
+let i=document.getElementById("ilosc").value;
+let cm=35;
+let cd=45;
+    if((m.checked&&k.checked)==true){
+   document.getElementById("wynik").innerHTML=cm*i+"zł";
+    }
+  else if((m.checked&&p.checked)==true){
+  document.getElementById("wynik").innerHTML=(cm*i)+20+"zł";
+  }
+  else if((d.checked&&k.checked)==true){
+   document.getElementById("wynik").innerHTML=cd*i+"zł";
+    }
+  else if((d.checked&&p.checked)==true){
+   document.getElementById("wynik").innerHTML=(cd*i)+20+"zł";
+  }
+  else {  document.getElementById("wynik").innerHTML="Zaznacz Produkt/Ilość/Opłatę";
+}
 }
