@@ -1,8 +1,8 @@
 body{
     margin:0px;
+    background-color: rgb(77, 76, 75);
 }
 #header{
-    /*background-color: blue;*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@ body{
     margin: 5px;
 }
 #box{
-    background-color: aqua;
+    background-color: orangered;
     width:100%;
     height: 900px;
     display: flex;
@@ -33,7 +33,6 @@ body{
     justify-content: center;
 }
 #slide{
-    /*background-color: aqua;*/
     width: 100%;
     height: 300px;
     padding-top: 10px;
@@ -43,10 +42,16 @@ body{
     justify-content: center;
 }
 #buying{
-    /*background-color: aqua;*/
     width: 100%;
     height: 300px;
     padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; 
+    justify-content: center;
+}
+#napis{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: center; 
@@ -64,7 +69,6 @@ body{
     text-align: center;
 }
 #b{
-    /*background-color: aqua;*/
     margin:1px;
     width: 33%;
     height: 336,3px; 
@@ -75,14 +79,15 @@ body{
     align-content: center;
 }
 #p{
-    background-color: red;
-    width:200px;
-    height:200px;
+    background-color: orangered;
 }
 #z{
-    background-color: blueviolet;
+    background-color: orangered;
     width: 500px;
     height: 300px;
+}
+#z img{
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 #galeria{
     display: flex;
@@ -229,4 +234,8 @@ body{
 
 .slider-nav a:hover{
     opacity: 1;
+}
+#buy img{
+    width: 400px;
+    height: 276px;
 }
